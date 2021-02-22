@@ -60,7 +60,7 @@ manage and enable Persistent Storage in Kubernetes.  Below is an example of a _S
 
 ##### For Kubernetes 1.4:
 ```
-apiVersion: storage.k8s.io/v1beta1
+apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: gluster-heketi  <1>
@@ -74,7 +74,7 @@ parameters:
 
 ##### For Kubernetes 1.5 and later:
 ```
-apiVersion: storage.k8s.io/v1beta1
+apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: gluster-heketi  <1>

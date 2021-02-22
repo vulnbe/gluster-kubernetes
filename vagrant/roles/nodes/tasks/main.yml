@@ -29,7 +29,7 @@
   delay: 1
 
 - name: Pull heketi Docker image
-  command: docker pull heketi/heketi:dev
+  command: docker pull heketi/heketi:latest
   register: task_result
   until: task_result.rc == 0
   retries: 5

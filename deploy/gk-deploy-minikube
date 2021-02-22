@@ -36,7 +36,7 @@ if minikube addons list | grep -q "default-storageclass: enabled" ; then
 fi
 
 ${CLI} create -f - <<EOF
-apiVersion: storage.k8s.io/v1beta1
+apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: glusterfs-storage

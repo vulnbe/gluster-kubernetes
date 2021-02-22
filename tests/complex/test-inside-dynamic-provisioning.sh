@@ -11,7 +11,7 @@ export HEKETI_CLI_SERVER
 SC="mysc"
 
 cat > "${SC}.yaml" <<EOF
-apiVersion: storage.k8s.io/v1beta1
+apiVersion: storage.k8s.io/v1
 kind: StorageClass
 metadata:
   name: ${SC}

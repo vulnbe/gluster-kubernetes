@@ -408,7 +408,7 @@ documentation.
 
 ```
 kind: StorageClass
-apiVersion: storage.k8s.io/v1beta1
+apiVersion: storage.k8s.io/v1
 metadata:
   name: gluster-dyn
 provisioner: kubernetes.io/glusterfs
