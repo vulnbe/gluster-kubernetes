@@ -299,7 +299,7 @@ spec:
       hostNetwork: true
       containers:
       - name: heketi
-        image: heketi/heketi:latest
+        image: heketi/heketi:10
         imagePullPolicy: IfNotPresent
         volumeMounts:
         - name: keys
