@@ -19,6 +19,10 @@ spec:
         glusterfs: pod
         glusterfs-node: pod
     spec:
+      tolerations:
+        - key: "node-role.kubernetes.io/master"
+          operator: "Exists"
+          effect: "NoSchedule"
       nodeSelector:
         storagenode: glusterfs
       hostNetwork: true
